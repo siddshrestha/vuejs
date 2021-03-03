@@ -9,7 +9,9 @@ new Vue({
         x: 0,
         y: 0,
         fname: '',
-        realage: ''
+        realage: '',
+        a: 0,
+        b: 0
     },
     methods: {
         greet: function(time){
@@ -32,9 +34,24 @@ new Vue({
             console.log("You entered your age");
         },
 
+        
+
+
         updateXY: function(event){
             this.x = event.offsetX;
             this.y = event.offsetY;
-        },
+        }
+
+
     },
+
+    computed: {
+        addtoA: function(){
+            return this.a + this.age;
+        },
+
+        addtoB: function(){
+            return this.b + this.age;
+        }
+    }
 });
