@@ -29,9 +29,11 @@
 
         <h1>Keyboard Events</h1>
         <label>Name:</label>
-        <input type="text" v-on:keyup.enter="logName"/>
+        <input type="text" v-model = "fname"/>
+        <span>{{ fname }}</span>
         <label>Age:</label>
-        <input type="text" v-on:keyup.enter="logAge"/>
+        <input type="text" v-model = "realage"/>
+        <span>{{ realage }}</span>
         
 
         <div id="canvas" v-on:mousemove="updateXY">{{ x }}, {{ y }}</div>
