@@ -7,7 +7,7 @@ new Vue({
         websiteTag: '<a href="https://www.linkedin.com/in/siddhartha-shrestha-b93277190/">Sidd Linkedin </a>',
         age: 24,
         x: 0,
-        y: 0
+        y: 0,
     },
     methods: {
         greet: function(time){
@@ -26,6 +26,6 @@ new Vue({
         updateXY: function(event){
             this.x = event.offsetX;
             this.y = event.offsetY;
-        }
+        },
     },
 });

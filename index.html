@@ -20,10 +20,10 @@
 
 
         <h1>Events</h1>
-        <button v-on:click = "add">Add a year</button>
-        <button v-on:click = "sub">Subtract a year</button>
+        <button v-on:click = "add(1)">Add a year</button>
+        <button v-on:click = "sub(1)">Subtract a year</button>
         <button v-on:dblclick = "add(10)">Add 10 years</button>
-        <button v-on:dblclick = "subtract(10)">Subtract 10 years</button>
+        <button v-on:dblclick = "sub(10)">Subtract 10 years</button>
         <p>My age is {{ age }}</p>
         
 
