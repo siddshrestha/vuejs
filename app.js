@@ -23,6 +23,13 @@ new Vue({
             this.age -= dec;
         },
 
+        logName: function(){
+            console.log("You entered your name");
+        },
+        logAge: function(){
+            console.log("You entered your age");
+        },
+
         updateXY: function(event){
             this.x = event.offsetX;
             this.y = event.offsetY;
